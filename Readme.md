@@ -17,7 +17,7 @@ Oracle JET (JavaScript Extension Toolkit) is a modular open-source toolkit desig
 
 To get started with Oracle JET, you can follow these basic steps:
 
-1. **Set Up Your Environment**: Install Node.js and the Oracle JET command-line interface (CLI) to scaffold and manage your projects.
+1. **Set Up Your Environment**: Install Node.js and the Oracle JET command-line interface (CLI) to scaffold and manage your projects. Kindly follow these steps to install [NodeJS](./01-node.md) and [OJet](02-ojet.md)
 2. **Create a New JET Application**: Use the JET CLI to create a new project, which sets up the necessary project structure and dependencies.
 3. **Develop Your Application**: Leverage JET’s rich set of UI components, data-binding features, and other tools to build your application.
 4. **Test and Deploy**: Use JET’s built-in tools to test your application and deploy it to your preferred hosting environment.
