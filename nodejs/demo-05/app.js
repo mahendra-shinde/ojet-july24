@@ -12,16 +12,7 @@ app.listen(port, ()=>{
     console.log(`Your Application is running on port ${port}`);
 });
 
-let customers = [
-    {"custId":"A1234",
-        "firstName":"Rohit",
-        "lastName":"Shetty"
-    },
-    {"custId":"A1235",
-        "firstName":"Suniel",
-        "lastName":"Shetty"
-    }
-];
+let customers;
 app.get('/all',(r,q) =>
       {q.json(customers);}  
 );
