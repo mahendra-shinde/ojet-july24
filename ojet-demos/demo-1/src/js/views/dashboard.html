@@ -5,8 +5,8 @@
  -->
 <div class="oj-hybrid-padding">
   <h1>Dashboard Content Area</h1>
-  <div id="form-container">
-      <oj-c-form-layout id="form1" max-columns="2">
+  <div id="form-container" style="max-width: 600px;">
+      <!-- <oj-c-form-layout id="form1" max-columns="2">
         <oj-c-label  for="f1">Enter first name</oj-c-label>
         <oj-c-input-text label-edge="none" label-hint="First Name" id="f1" placeholder="First Name" value=""></oj-c-input-text>
         <oj-c-label  for="f2">Enter last name</oj-c-label>
@@ -16,6 +16,17 @@
         <oj-c-label  for="f4">Enter your Customer ID </oj-c-label>
         <oj-c-input-text label-edge="none" label-hint="customer id" id="f4"></oj-c-input-text>
         <oj-c-button chroming="solid"  label="Submit"></oj-c-button>
-      </oj-c-form-layout>
+      </oj-c-form-layout> -->
+      <oj-input-text id="custId" label-hint="Customer ID" value="{{custId}}" required></oj-input-text>
+      <oj-input-text id="email" label-hint="Email" value="{{email}}" required type="email"></oj-input-text>
+      <oj-input-text id="firstName" label-hint="First Name" value="{{firstName}}" required></oj-input-text>
+      <oj-input-text id="lastName" label-hint="Last Name" value="{{lastName}}" required></oj-input-text>
+      <oj-button on-oj-action="[[submitForm]]">Submit</oj-button>
   </div>
+  <script>
+    require(['formViewModel'], function(viewModel) {
+        var formViewModel = new viewModel();
+        ko.applyBindings({ formViewModel: formViewModel }, document.getElementById('formContainer'));
+    });
+</script>
 </div>
